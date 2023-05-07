@@ -1,0 +1,119 @@
+:root{
+  /*Primary*/
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30,38%,92%);
+
+  /*Neutral*/
+  --very-dark: hsl(212, 21%, 14%);
+  --dark-gayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  
+}
+
+html{
+  font-size:62.5%;
+}
+
+body{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  background: var(--cream);
+}
+
+.main{
+  width: 90%;
+  height: 100%;
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+  border-radius:1rem;
+  margin-top:2rem;
+  border-radius:2rem;
+  margin-top:2rem;
+  background: var(--white);
+}
+
+.main figure img{
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  border-radius:1rem 1rem 0 0;
+}
+
+.main-article{
+  margin-left:1.4rem;
+}
+
+.main-article p:nth-of-type(1){
+  font-family:montserrat;
+  font-size:1.2rem;
+  letter-spacing: 0.5rem;
+  color: var(--dark-gayish-blue);
+  margin-top: 1.5rem;
+}
+
+.main-article h2{
+  font-family: fraunces;
+  font-size:3.2rem;
+  line-height:3rem;
+  margin-top: 1.2rem;
+  color:var(--very-dark);
+}
+
+.main-article p:nth-of-type(2){
+  font-family: montserrat;
+  font-size:1.4rem;
+  color:var(--dark-gayish-blue);
+  margin-top: 1.5rem;
+  line-height: 2.1rem;
+}
+
+.prices{
+  width:100%;
+  display:flex;
+  margin-top:1.5rem;
+  margin-left:3rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap:1.5rem;
+}
+
+.prices h2{
+  font-family:fraunces;
+  font-size: 3.2rem;
+  color: var(--dark-cyan);
+}
+
+.prices p{
+  font-family: montserrat;
+  font-size: 1.3rem;
+  color:var(--dark-gayish-blue);
+  text-decoration: line-through;
+}
+
+.add-cart-button{
+  width:90%;
+  background: var(--dark-cyan);
+  justify-self:center;
+  color: var(--white);
+  border-radius:1rem;
+  border:none;
+  font-family: montserrat;
+  font-size:1.3rem;
+  font-weight: 800;
+  padding:1.5rem;
+  margin-top:1.8rem; 
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  gap: 1.1rem;
+  margin-bottom:2rem;
+}
