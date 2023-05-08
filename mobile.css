@@ -28,6 +28,10 @@ body{
   background: var(--cream);
 }
 
+.main figure img:nth-of-type(2){
+  display:none;
+}
+
 .main{
   width: 90%;
   height: 100%;
@@ -52,10 +56,18 @@ body{
   margin-left:1.4rem;
 }
 
-.main-article p:nth-of-type(1){
+.title-desktop{
+  display:none;
+}
+
+.text-desktop{
+  display:none;
+}
+
+.main-article-p{
   font-family:montserrat;
   font-size:1.2rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   color: var(--dark-gayish-blue);
   margin-top: 1.5rem;
 }
@@ -80,7 +92,6 @@ body{
   width:100%;
   display:flex;
   margin-top:1.5rem;
-  margin-left:3rem;
   align-items: center;
   justify-content: flex-start;
   gap:1.5rem;
@@ -90,9 +101,10 @@ body{
   font-family:fraunces;
   font-size: 3.2rem;
   color: var(--dark-cyan);
+  margin-top:0;
 }
 
-.prices p{
+.old-price{
   font-family: montserrat;
   font-size: 1.3rem;
   color:var(--dark-gayish-blue);
@@ -116,4 +128,8 @@ body{
   justify-content: center;
   gap: 1.1rem;
   margin-bottom:2rem;
+}
+
+.footer{
+  margin-top:2rem;
 }
